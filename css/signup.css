@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-image: url(images/background_image.jpg);
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+#conteiner {
+    max-width: 1540px;
+    background-color: rgba(0,0,0,0.6);
+    /* margin-top: 30px; */
+    margin: 30px auto;
+}
+
+#title {
+    color: white;
+    /* 1rem = 16px */
+    font-size: 3.1rem;
+    font-family: 'Bowlby One SC';
+    letter-spacing: 5px;
+}
+
+span {
+    color: red;
+}
+
+#description {
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+#survey-form-conteiner {
+    width: 500px;
+    /* height: 897px; */
+    background-color: rgba(0,0,0,0.8);
+    margin: auto;
+    padding: 10px 40px;
+}
+
+#survey-form {
+    max-width: 460px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+#name,#age,#email,#dropdown,#feedback {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.input-box {
+    margin-top: 10px;
+}
+
+#form-button {
+    width: 160px;
+    height: 45px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#form-submit {
+    width: 160px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+textarea {
+    resize: none;
+}
+  
+#sub-container{
+    font-size: 25px;
+    padding-right: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 20%;
+}
+.sub-box{
+    min-height: 70vh;
+    background-color: white;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 100px auto;
+    width: 1200px;
+    height: 1500px;
+    border-radius: 12px;
+    justify-content: center;
+    padding-left: 70px;
+    text-align: left;
+    align-items: center;
+    padding-left: 22%;
+}
+
+.sub-footer{
+    height: 400px;
+    background-color: rgb(218, 213, 213);
+    color: white;
+    bottom: 0;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border: auto;
+    margin: 12px 0;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+}
+.footer-items{
+    color: rgb(41, 39, 39);
+    padding-left: 17%;
+    padding-top: 12px;
+    justify-content: center;
+}
+

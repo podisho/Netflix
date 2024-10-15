@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lato:wght@100&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/netflix-logo.jpg">
+</head>
+
+<body>
+
+    <div id="conteiner">
+        <!-- Baştaki açıklama ve netflix bölümü -->
+        <header>
+            <h1 id="title">
+                NET<span>FLIX</span>
+            </h1>
+
+            <h3 id="description">
+                Thanks you for signing up to NetFlix.Tell me about yourself
+            </h3>
+
+        </header>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="image">
+              <img src="images\avengerss.jpg" >
+              </div>
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+            
+            <div class="image">  
+              <img src="images\justices.jpg">
+              </div>
+              
+            </div>
+            
+            <div class="mySlides fade">
+            
+            <div class="image">  
+              <img src="images\thors.jpg">  
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="image">  
+              <img src="images\avengerss2.jpg">
+              </div>
+             </div>
+              
+              <div class="mySlides fade">
+            <div class="image">  
+              <img src="imageS\homecomings.jpg">  
+              </div>
+            </div>
+              
+            </div>
+            
+            
+            
+            
+            
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              </div>
+            
+            
+              
+              <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+            </script>
+            
+            
+            <div class="slideshow-container">
+
+
+        <div id="survey-form-conteiner">
+            <div id="survey-form">
+                <form action="result.html" method="get" target="_blank">
+                    <div class="input-box" id="box-name">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+                    </div>
+                    <!-- Age part -->
+                    <div class="input-box" id="box-age">
+                        <label for="age">Age</label><br>
+                        <input type="number" name="age" id="age" placeholder="Enter your age" min="10"><br>
+                    </div>
+                    <!-- Email Part -->
+                    <div class="input-box" id="box-mail">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your age"><br>
+                    </div>
+                    <!-- Content Type part -->
+                    <div class="input-box"><label for="content" id="box-content">Content Type</label><br>
+                        <select name="content" id="dropdown">
+                            <option value="movie">Movie</option>
+                            <option value="series">Series</option>
+                            <option value="documentary">Documentary</option>
+                            <option value="cartoo">Cartoon</option>
+                        </select>
+                    </div>
+                    <!-- Movie Type part -->
+                    <div class="input-box">
+                        <label for="Movie">Movie Type</label>
+                        <br>
+                        <input type="checkbox" name="movie" id="first-chech" value="Comedy">
+                        <label for="first-chech">Comedy</label>
+                        <br>
+                        <input type="checkbox" name="movie" id="second-chech" value="action" checked>
+                        <label for="second-chech">Action</label>
+                        <br>
+                        <input type="checkbox" name="movie" id="third-chech" value="Romance">
+                        <label for="third-chech">Romance</label>
+                    </div>
+                    <!-- Gender Part -->
+                    <div class="input-box">
+                        <label for="gender">Gender</label>
+                        <br>
+                        <input type="radio" name="gender" id="first-radio" value="male" checked>
+                        <label for="first-radio">Male</label><br>
+                        <input type="radio" name="gender" id="second-radio" value="female">
+                        <label for="second-radio">Female</label><br>
+                        <input type="radio" name="gender" id="third-radio" value="other">
+                        <label for="third-radio">Other</label>
+                    </div>
+                    <!-- Feedback Part -->
+                    <div class="input-box">
+                        <label for="feedback">Feedback</label><br>
+                        <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Any comment..." >
+                        </textarea>
+                    </div>
+                    
+                    <div id="form-submit">
+                        <input type="submit" value="SEND" id="form-button">
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="sub-footer">
+        <div class="footer-items">
+            <h2>Questions? Call 0120-996-012</h2><br>
+            <table >
+                <tr>
+                <th id="data-box"><a href="">FAQ</a></th>
+                <th id="data-box"><a href="">Help Center</a></th>
+                <th id="data-box"><a href="">Netflix Shop</a></th>
+                <th id="data-box"><a href="">Terms of Use</a></th>
+                </tr>
+                <tr>
+                    <th id="data-box"><a href="">Privacy</a></th>
+                    <th id="data-box"><a href="">Cookie Preferences</a></th>
+                    <th id="data-box"><a href="">Corporate Information</a></th>
+                    <th id="data-box"><a href="">Act on Commercial Transactions</a></th>
+                    </tr>
+            </table>
+            <form>
+                <select name="dropdown" id="form">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="Telegu">తెలుగు</option>
+            </form>
+        </div>
+
+</body>
+
+</html>
